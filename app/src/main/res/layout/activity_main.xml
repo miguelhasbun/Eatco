@@ -43,6 +43,7 @@
             android:layout_alignStart="@+id/textView4"
             android:layout_below="@+id/textView4"
             android:layout_marginTop="11dp"
+            android:onClick="callmenu"
             android:text="Menú" />
 
         <Button
