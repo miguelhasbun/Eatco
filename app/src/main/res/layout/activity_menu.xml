@@ -6,4 +6,85 @@
     android:layout_height="match_parent"
     tools:context="com.example.miguelpaz.eatco.Menu">
 
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Categorías"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="350dp"
+            android:layout_height="57dp"
+            android:text="Típico"
+            tools:layout_editor_absoluteX="17dp"
+            tools:layout_editor_absoluteY="370dp"
+            android:drawableLeft="@drawable/honduras"
+            android:onClick="callhonduras"
+            android:layout_below="@+id/button"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="350dp"
+            android:layout_height="59dp"
+            android:text="Mexicano"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="298dp"
+            android:layout_below="@+id/button5"
+            android:drawableLeft="@drawable/mexico"
+            android:onClick="callmexico"
+            android:layout_alignLeft="@+id/button5"
+            android:layout_alignStart="@+id/button5" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="352dp"
+            android:layout_height="54dp"
+            android:text="Italiano"
+            android:drawableLeft="@drawable/italia"
+            android:onClick="callitaliano"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="231dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignLeft="@+id/button5"
+            android:layout_alignStart="@+id/button5"
+            android:layout_marginTop="55dp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="354dp"
+            android:layout_height="63dp"
+            android:text="ASIÁTICO"
+            android:drawableLeft="@drawable/asia"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="152dp"
+            android:layout_below="@+id/button3"
+            android:onClick="callasiatico"
+            android:layout_alignLeft="@+id/button3"
+            android:layout_alignStart="@+id/button3" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="354dp"
+            android:layout_height="73dp"
+            android:text="Americano"
+            android:onClick="callusa"
+            android:drawableLeft="@drawable/usa"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="66dp"
+            android:layout_below="@+id/button2"
+            android:layout_alignLeft="@+id/button2"
+            android:layout_alignStart="@+id/button2" />
+
+    </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>
