@@ -54,10 +54,10 @@
             android:onClick="callitaliano"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="231dp"
+            android:layout_marginTop="55dp"
             android:layout_below="@+id/textView"
-            android:layout_alignLeft="@+id/button5"
-            android:layout_alignStart="@+id/button5"
-            android:layout_marginTop="55dp" />
+            android:layout_alignRight="@+id/button5"
+            android:layout_alignEnd="@+id/button5" />
 
         <Button
             android:id="@+id/button2"
