@@ -21,8 +21,8 @@ import java.util.logging.Logger;
 
 public class usuario implements Serializable {
 
-    private String usuario,password;
-    private int puntos;
+    private String usuario,password,direccion,correo;
+    private int puntos,numero;
     public static ArrayList<usuario>usuarios=new ArrayList<>();
     public static usuario loggedUser;
     private ArrayList<Historial>historial;
@@ -38,62 +38,24 @@ public class usuario implements Serializable {
 
     public static void add(String user, String pass)throws IOException{
         usuarios.add(new usuario(user, pass));
-        SharedPreferences sharedPref= getPreferences(Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = sharedPref.edit();
-        editor.putInt(getString(R.string.saved_high_score), newHighScore);
-        editor.apply();
-        /*
-        FileOutputStream fo = new FileOutputStream("user.us");
-        ObjectOutputStream oo = new ObjectOutputStream(fo);
-        oo.writeObject(usuarios);*/
     }
 
     public static usuario existe(String user) throws FileNotFoundException, IOException{
-        try{
-            FileInputStream fi = new FileInputStream("user.us");
-            ObjectInputStream oi = new ObjectInputStream(fi);
-            usuarios = (ArrayList<usuario>)oi.readObject();
-        } catch (FileNotFoundException ex) {
-
-        } catch (IOException | ClassNotFoundException ex) {
-            FileOutputStream fo= new FileOutputStream("user.us");
-            ObjectOutputStream oo = new ObjectOutputStream(fo);
-            oo.writeObject(usuarios);
-            Logger.getLogger(usuario.class.getName()).log(Level.SEVERE, null, ex);
-            return null;
+        for(usuario u:usuarios){
+            if(u.getUsername().equals(user))
+                return u;
         }
-        for (usuario u : usuarios){
-            if (u != null){
-                if(u.getUsername().equals(user))
-                    return u;
 
-            }
-        }
         return null;
     }
 
     public static usuario verificar(String text, String passw) throws IOException, ClassNotFoundException {
-        // FileOutputStream fo = new FileOutputStream("player.pl");
-        // ObjectOutputStream oo = new ObjectOutputStream(fo);
-        //oo.writeObject(players);
-        try{
-            FileInputStream fi = new FileInputStream("user.us");
-            ObjectInputStream oi = new ObjectInputStream(fi);
-            usuarios=(ArrayList<usuario>)oi.readObject();
-            for(usuario u:usuarios){
-                if (text.equals(u.getUsername())){
-                    if(passw.equals(u.getPassword())){
-                        return u;
-                    }
-                }
-            }return null;
-        }catch(FileNotFoundException e){
-            FileOutputStream fo = new FileOutputStream("user.us");
-            ObjectOutputStream oo = new ObjectOutputStream(fo);
-            oo.writeObject(usuarios);
-            return null;
+        usuario newUser= existe(text);
+        if(newUser!= null){
+            if(passw.equals(newUser.getPassword()))
+                return newUser;
         }
-
+        return null;
     }
 
     public static void addPuntos(){
@@ -134,7 +96,29 @@ public class usuario implements Serializable {
         this.puntos = puntos;
     }
 
+    public void setDireccion(String d){
+        this.direccion=d;
+    }
 
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setCorreo(String c){
+        this.correo=c;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
+    }
 
 
 }

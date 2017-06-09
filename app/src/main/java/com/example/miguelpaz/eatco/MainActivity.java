@@ -17,4 +17,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i= new Intent(this, Menu.class);
         startActivity(i);
     }
+
+    public void callcerrar(View view){
+        usuario.setLoggedUser(null);
+        finish();
+    }
 }

@@ -28,10 +28,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
             android:text="Bienvenido a Eatco................."
             android:textAppearance="@style/TextAppearance.AppCompat.Button"
-            android:visibility="invisible" />
+            android:visibility="invisible"
+            android:layout_alignBottom="@+id/imageView2" />
 
         <Button
             android:id="@+id/button7"
@@ -83,12 +83,25 @@
             android:id="@+id/button12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="callcerrar"
+            android:text="CERRAR SESION"
+            android:layout_below="@+id/button24"
+            android:layout_alignLeft="@+id/button24"
+            android:layout_alignStart="@+id/button24"
+            android:layout_alignRight="@+id/button24"
+            android:layout_alignEnd="@+id/button24" />
+
+        <Button
+            android:id="@+id/button24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="callconfig"
+            android:text="Configuracion"
+            android:layout_below="@+id/button10"
+            android:layout_alignRight="@+id/button10"
             android:layout_alignEnd="@+id/button10"
             android:layout_alignLeft="@+id/button10"
-            android:layout_alignRight="@+id/button10"
-            android:layout_alignStart="@+id/button10"
-            android:layout_below="@+id/button10"
-            android:text="SUSCRÍBETE" />
+            android:layout_alignStart="@+id/button10" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
