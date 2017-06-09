@@ -34,9 +34,11 @@ public class RegistrarseActivity extends AppCompatActivity {
 
                 usuario.add(user,pass);
                 Toast.makeText(this, "Usuario registrado correctamente.", Toast.LENGTH_LONG).show();
+                System.out.println("bien");
                 usuario.setLoggedUser(usuario.existe(user));
                 Intent inte = new Intent(this, MainActivity.class);
                 startActivity(inte);
+                System.out.println("bien");
             }
             else{
                 Toast.makeText(this, "Ya existe un usuario con este nombre.", Toast.LENGTH_LONG).show();
@@ -67,8 +69,7 @@ public class RegistrarseActivity extends AppCompatActivity {
                 startActivity(inte);
                 //System.out.println("LOGGED USER: " + usuario.getLoggedUser());
             } else {
-                Toast.makeText(this, " Usuario y/o contraseña incorrectos.\n"
-                        + "Debe crear el usuario o intentar con otro usuario y contraseña", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, " Usuario y/o contraseña incorrectos.", Toast.LENGTH_LONG).show();
             }
         }
         catch(IOException e){
