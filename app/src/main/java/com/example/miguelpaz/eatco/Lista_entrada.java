@@ -6,14 +6,15 @@ package com.example.miguelpaz.eatco;
 
 public class Lista_entrada {
 
-        private int idImagen;
+        private int idImagen,precio;
         private String textoEncima;
         private String textoDebajo;
 
-        public Lista_entrada(int idImagen, String textoEncima, String textoDebajo) {
+        public Lista_entrada(int idImagen, String textoEncima, String textoDebajo,int p) {
             this.idImagen = idImagen;
             this.textoEncima = textoEncima;
             this.textoDebajo = textoDebajo;
+            this.precio=p;
         }
 
         public String get_textoEncima() {
@@ -26,5 +27,9 @@ public class Lista_entrada {
 
         public int get_idImagen() {
             return idImagen;
+        }
+
+        public int getPrecio(){
+            return precio;
         }
 }

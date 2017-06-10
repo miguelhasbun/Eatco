@@ -22,7 +22,7 @@ import java.util.logging.Logger;
 public class usuario implements Serializable {
 
     private String usuario,password,direccion,correo;
-    private int puntos,numero;
+    private int puntos,numero,total;
     public static ArrayList<usuario>usuarios=new ArrayList<>();
     public static usuario loggedUser;
     private ArrayList<Historial>historial;
@@ -32,6 +32,7 @@ public class usuario implements Serializable {
         this.password=pass;
         this.historial = new ArrayList<>();
         this.puntos=0;
+        this.total=0;
     }
 
 
@@ -119,6 +120,10 @@ public class usuario implements Serializable {
     public void setNumero(int numero) {
         this.numero = numero;
     }
+
+    public int getTotal(){return total;}
+
+    public  void setTotal(int t){this.total = total + t;}
 
 
 }
