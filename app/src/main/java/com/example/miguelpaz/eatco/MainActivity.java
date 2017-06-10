@@ -22,4 +22,9 @@ public class MainActivity extends AppCompatActivity {
         usuario.setLoggedUser(null);
         finish();
     }
+
+    public void callconfig(View view){
+        Intent i= new Intent(this, Configuracion.class);
+        startActivity(i);
+    }
 }
