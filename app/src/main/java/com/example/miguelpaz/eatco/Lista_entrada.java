@@ -6,11 +6,12 @@ package com.example.miguelpaz.eatco;
 
 public class Lista_entrada {
 
-        private int idImagen,precio;
+        private int idImagen;
+        double precio;
         private String textoEncima;
         private String textoDebajo;
 
-        public Lista_entrada(int idImagen, String textoEncima, String textoDebajo,int p) {
+        public Lista_entrada(int idImagen, String textoEncima, String textoDebajo,double p) {
             this.idImagen = idImagen;
             this.textoEncima = textoEncima;
             this.textoDebajo = textoDebajo;
@@ -29,7 +30,7 @@ public class Lista_entrada {
             return idImagen;
         }
 
-        public int getPrecio(){
+        public double getPrecio(){
             return precio;
         }
 }

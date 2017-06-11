@@ -1,21 +1,20 @@
 package com.example.miguelpaz.eatco; /**
  * Created by ANDY ESCOBAR 007 on 31/5/2017.
  */
-import javax.swing.*;
-import java.awt.*;
+
 
 public class Comida {
     private String title,content;
     private double price;
     private int picture;
-    private TipoDeComida tipo;
+   // private TipoDeComida tipo;
 
-    public Comida(String title, String content, double price, int picture, TipoDeComida tipo) {
+    public Comida(String title, String content, double price, int picture) {
         this.title = title;
         this.content = content;
         this.price = price;
         this.picture = picture;
-        this.tipo = tipo;
+       //this.tipo = tipo;
     }
 
     public String getTitle() {
@@ -50,12 +49,13 @@ public class Comida {
         this.picture = picture;
     }
 
-    public TipoDeComida getTipo() {
+    /*public TipoDeComida getTipo() {
         return tipo;
     }
 
     public void setTipo(TipoDeComida tipo) {
         this.tipo = tipo;
     }
+    */
 }
 

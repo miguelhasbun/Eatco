@@ -51,6 +51,7 @@
 
         <Button
             android:id="@+id/button13"
+            android:onClick="callFridays"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignEnd="@+id/button11"
