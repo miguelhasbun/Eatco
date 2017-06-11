@@ -5,5 +5,5 @@ package com.example.miguelpaz.eatco;
  */
 
 public class Historial {
-
+    CharSequence s  = DateFormat.getDateInstance().format("MMMM d, yyyy ");
 }
