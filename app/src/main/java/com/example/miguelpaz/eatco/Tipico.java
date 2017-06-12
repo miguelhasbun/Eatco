@@ -28,10 +28,10 @@ public class Tipico extends AppCompatActivity {
         Menu.restauranteActual="Costas Burger";
         if(Adaptador.datos.size()>0)
             Adaptador.clearList();
-        Adaptador.addList(new Comida("Arroz","",90,R.drawable.comida2));
-        Adaptador.addList(new Comida("Daddy Itto","Papas con carne y con refresco mediano",100,R.drawable.daddy));
-        Adaptador.addList(new Comida("Marimba Roll","",100,R.drawable.marimba));
-        Adaptador.addList(new Comida("El Chelito","",100,R.drawable.elchelito));
+        Adaptador.addList(new Comida("?","",90,R.drawable.costas1));
+        Adaptador.addList(new Comida("?","",100,R.drawable.costas2));
+        Adaptador.addList(new Comida("?","",100,R.drawable.costas3));
+        Adaptador.addList(new Comida("?","",100,R.drawable.costas4));
         Intent i= new Intent(this, Adaptador.class);
         startActivity(i);
     }

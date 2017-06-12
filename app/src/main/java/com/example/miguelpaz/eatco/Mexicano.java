@@ -17,11 +17,11 @@ public class Mexicano extends AppCompatActivity {
         Menu.restauranteActual="Antojitos";
         if(Adaptador.datos.size()>0)
             Adaptador.clearList();
-        Adaptador.addList(new Comida("Arroz","",90,R.drawable.antojitos1));
-        Adaptador.addList(new Comida("Daddy Itto","",100,R.drawable.antojitos2));
-        Adaptador.addList(new Comida("Marimba Roll","",100,R.drawable.antojitos3));
-        Adaptador.addList(new Comida("El Chelito","",100,R.drawable.antojitos4));
-        Adaptador.addList(new Comida("El Chelito","",100,R.drawable.antojitos5));
+        Adaptador.addList(new Comida("?","",90,R.drawable.antojitos1));
+        Adaptador.addList(new Comida("?","",100,R.drawable.antojitos2));
+        Adaptador.addList(new Comida("?","",100,R.drawable.antojitos3));
+        Adaptador.addList(new Comida("?","",100,R.drawable.antojitos4));
+        Adaptador.addList(new Comida("?","",100,R.drawable.antojitos5));
         Intent i= new Intent(this, Adaptador.class);
         startActivity(i);
     }
@@ -30,10 +30,10 @@ public class Mexicano extends AppCompatActivity {
         Menu.restauranteActual="Tacotento";
         if(Adaptador.datos.size()>0)
             Adaptador.clearList();
-        Adaptador.addList(new Comida("Arroz","",90,R.drawable.tacotento1));
-        Adaptador.addList(new Comida("Daddy Itto","",100,R.drawable.tacotento2));
-        Adaptador.addList(new Comida("Marimba Roll","",100,R.drawable.tacotento3));
-        Adaptador.addList(new Comida("El Chelito","",100,R.drawable.tacotento4));
+        Adaptador.addList(new Comida("?","",90,R.drawable.tacotento1));
+        Adaptador.addList(new Comida("?","",100,R.drawable.tacotento2));
+        Adaptador.addList(new Comida("?","",100,R.drawable.tacotento3));
+        Adaptador.addList(new Comida("?","",100,R.drawable.tacotento4));
         Intent i= new Intent(this, Adaptador.class);
         startActivity(i);
     }
@@ -42,10 +42,10 @@ public class Mexicano extends AppCompatActivity {
         Menu.restauranteActual="Taco Inn";
         if(Adaptador.datos.size()>0)
             Adaptador.clearList();
-        Adaptador.addList(new Comida("Arroz","",90,R.drawable.comida2));
-        Adaptador.addList(new Comida("Daddy Itto","",100,R.drawable.daddy));
-        Adaptador.addList(new Comida("Marimba Roll","",100,R.drawable.marimba));
-        Adaptador.addList(new Comida("El Chelito","",100,R.drawable.elchelito));
+        Adaptador.addList(new Comida("?","",90,R.drawable.comida2));
+        Adaptador.addList(new Comida("?","",100,R.drawable.daddy));
+        Adaptador.addList(new Comida("?","",100,R.drawable.marimba));
+        Adaptador.addList(new Comida("?","",100,R.drawable.elchelito));
         Intent i= new Intent(this, Adaptador.class);
         startActivity(i);
     }
