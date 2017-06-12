@@ -51,7 +51,7 @@ public class Adaptador extends Activity {
 
 
         });
-
+/*
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public CheckBox seleccion;
             public EditText cant;
@@ -68,7 +68,7 @@ public class Adaptador extends Activity {
                     texto_rtotal.setText(String.valueOf(usuario.getLoggedUser().getTotal()));
                 }
             }
-        });
+        });*/
     }
 
     public static void addList(Comida c){

@@ -19,6 +19,7 @@
             android:layout_alignParentTop="true"
             android:drawableLeft="@drawable/italia"
             android:text=" Restaurantes"
+
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
         <Button
@@ -31,6 +32,7 @@
             android:layout_alignRight="@+id/textView7"
             android:layout_below="@+id/textView7"
             android:layout_marginTop="48dp"
+            android:onClick="callilromano"
             android:text="Il Romano" />
 
         <Button
@@ -43,6 +45,7 @@
             android:layout_alignRight="@+id/button22"
             android:layout_below="@+id/button22"
             android:layout_marginTop="14dp"
+            android:onClick="callhasta"
             android:text="Hasta la pasta" />
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
