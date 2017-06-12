@@ -29,6 +29,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Configuracion"></activity>
+        <activity android:name=".Adaptador"/>
     </application>
 
 </manifest>

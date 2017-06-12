@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -20,6 +22,12 @@ public class Adaptador extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.listado);
+
+        TextView texto_restaurante = (TextView) findViewById(R.id.txtRestaurante);
+        texto_restaurante.setText(Menu.restauranteActual);
+
+        final TextView texto_rtotal = (TextView) findViewById(R.id.textTotal);
+        texto_rtotal.setText(String.valueOf(usuario.getLoggedUser().getTotal()));
 
         ListView lista = (ListView) findViewById(R.id.ListView_listado);
         lista.setAdapter(new Lista_adaptador(this, R.layout.entrada, datos){
@@ -44,38 +52,23 @@ public class Adaptador extends Activity {
 
         });
 
-
-        /*
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public CheckBox seleccion;
+            public EditText cant;
+
             @Override
             public void onItemClick(AdapterView<?> pariente, View view, int posicion, long id) {
                 Lista_entrada elegido = (Lista_entrada) pariente.getItemAtPosition(posicion);
-                if(posicion==0) {
-                    CharSequence texto = "El mejor equipo " + elegido.get_textoDebajo();
-                    Toast toast = Toast.makeText(MainActivity.this, texto, Toast.LENGTH_LONG);
-                    toast.show();
-                }
-                else if(posicion==3){
-                    if(variable){
-                        variable=false;
-                        CharSequence texto = "En realidad el Real Madrid es el mejor " + elegido.get_textoDebajo();
-                        Toast toast = Toast.makeText(MainActivity.this, texto, Toast.LENGTH_LONG);
-                        toast.show();
-                    }else{
-                        variable=true;
-                        CharSequence texto = "Hala Madrid " + elegido.get_textoDebajo();
-                        Toast toast = Toast.makeText(MainActivity.this, texto, Toast.LENGTH_LONG);
-                        toast.show();
-                    }
 
-                }else {
-                    CharSequence texto = "Seleccionado: " + elegido.get_textoDebajo();
-                    Toast toast = Toast.makeText(MainActivity.this, texto, Toast.LENGTH_LONG);
-                    toast.show();
+                seleccion = (CheckBox) findViewById(R.id.checkBox);
+                if (seleccion.isChecked()) {
+                    cant = (EditText) findViewById(R.id.txtpagar);
+                    double c = Double.parseDouble(String.valueOf(cant.getText()));
+                    usuario.getLoggedUser().setTotal(c * elegido.getPrecio());
+                    texto_rtotal.setText(String.valueOf(usuario.getLoggedUser().getTotal()));
                 }
             }
-
-        });*/
+        });
     }
 
     public static void addList(Comida c){
@@ -86,10 +79,7 @@ public class Adaptador extends Activity {
         datos.clear();
     }
 
-    public static void setRestaurante(String r,View view){
-        TextView texto_restaurante = (TextView) view.findViewById(R.id.txtRestaurante);
-        texto_restaurante.setText(r);
-    }
+
 
 
 

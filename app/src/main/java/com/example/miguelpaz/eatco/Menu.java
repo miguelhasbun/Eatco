@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 public class Menu extends AppCompatActivity {
-
+    public static String restauranteActual;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -3,67 +3,78 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:weightSum="1">
 
-    <android.support.constraint.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <RelativeLayout
-            android:layout_width="367dp"
-            android:layout_height="30dp"
-            tools:layout_editor_absoluteX="8dp"
-            tools:layout_editor_absoluteY="7dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:weightSum="1">
-
-                <TextView
-                    android:id="@+id/txtRestaurante"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Restaurante"
-                    android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title" />
-
-                <Space
-                    android:layout_width="17dp"
-                    android:layout_height="25dp" />
-
-                <TextView
-                    android:id="@+id/textView16"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Total Lps. "
-                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title" />
-
-                <TextView
-                    android:id="@+id/textTotal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="0"
-                    android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title" />
-            </LinearLayout>
-
-        </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="421dp"
+        android:layout_weight="0.69">
 
         <ListView
             android:id="@+id/ListView_listado"
-            android:layout_width="382dp"
-            android:layout_height="460dp"
-            tools:layout_editor_absoluteY="44dp"
-            tools:layout_editor_absoluteX="0dp"></ListView>
-
-        <android.support.constraint.Guideline
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/guideline"
-            app:layout_constraintGuide_begin="20dp"
-            android:orientation="vertical" />
+            android:layout_height="405dp"
+            android:layout_weight="0.37"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="11dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
 
-    </android.support.constraint.ConstraintLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.40" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="464dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.18" />
+
+            <TextView
+                android:id="@+id/txtRestaurante"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Restaurante"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title" />
+
+            <Space
+                android:layout_width="17dp"
+                android:layout_height="25dp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Lps. "
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title" />
+
+            <TextView
+                android:id="@+id/textTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </LinearLayout>
