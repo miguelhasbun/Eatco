@@ -1,24 +1,27 @@
 package com.example.miguelpaz.eatco;
 
+import android.app.Activity;
+import android.view.View;
+
 /**
  * Created by ASUS on 8/12/2016.
  */
 
-public class Lista_entrada {
+public class Lista_entrada  {
 
         private int idImagen;
         private double precio,cant;
         private String textoEncima;
         private String textoDebajo;
-       // boolean ordenar;
+        public boolean ordenar;
 
         public Lista_entrada(int idImagen, String textoEncima, String textoDebajo,double p) {
             this.idImagen = idImagen;
             this.textoEncima = textoEncima;
             this.textoDebajo = textoDebajo;
             this.precio=p;
-        //    ordenar=false;
-          //  cant=0;
+            this.ordenar=false;
+            this.cant=0;
         }
 
         public String get_textoEncima() {
@@ -37,11 +40,23 @@ public class Lista_entrada {
             return precio;
         }
 
-      /*  public boolean getOrdenar(){return ordenar;}
+        public boolean getOrdenar(){return ordenar;}
 
         public void setOrdenar(boolean o){this.ordenar=o;}
 
         public double getCant(){return cant;}
 
-        public void setCant(double c){this.cant=c;}*/
+        public void setCant(double c){this.cant=c;}
+
+        public void chanceOrdenar(){
+            if(getOrdenar())
+                setOrdenar(false);
+            else
+                setOrdenar(true);
+        }
+
+
+    public void callordenar(View view) {
+        chanceOrdenar();
+    }
 }

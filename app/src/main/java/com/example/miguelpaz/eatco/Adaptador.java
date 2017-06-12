@@ -17,6 +17,8 @@ import java.util.ArrayList;
 
 public class Adaptador extends Activity {
     private boolean variable=true;
+    public static double subtotal;
+
     public static ArrayList<Lista_entrada> datos = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
