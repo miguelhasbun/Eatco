@@ -51,24 +51,28 @@ public class Adaptador extends Activity {
 
 
         });
-/*
+
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public CheckBox seleccion;
             public EditText cant;
+            public TextView total;
 
             @Override
             public void onItemClick(AdapterView<?> pariente, View view, int posicion, long id) {
+                boolean check=((CheckBox)view).isChecked();
+
+                total=(TextView)findViewById(R.id.textTotal);
                 Lista_entrada elegido = (Lista_entrada) pariente.getItemAtPosition(posicion);
-                elegido.getOrdenar();
-                seleccion = (CheckBox) findViewById(R.id.checkBox);
-                if (seleccion.isChecked()) {
+              // elegido.getOrde00nar();
+                seleccion = (CheckBox)findViewById(R.id.checkBox);
+                if (check) {
                     cant = (EditText) findViewById(R.id.txtpagar);
                     double c = Double.parseDouble(String.valueOf(cant.getText()));
                     usuario.getLoggedUser().setTotal(c * elegido.getPrecio());
-                    texto_rtotal.setText(String.valueOf(usuario.getLoggedUser().getTotal()));
+                    total.setText(String.valueOf(usuario.getLoggedUser().getTotal()));
                 }
             }
-        });*/
+        });
     }
 
     public static void addList(Comida c){
