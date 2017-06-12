@@ -59,7 +59,7 @@ public class Adaptador extends Activity {
             @Override
             public void onItemClick(AdapterView<?> pariente, View view, int posicion, long id) {
                 Lista_entrada elegido = (Lista_entrada) pariente.getItemAtPosition(posicion);
-
+                elegido.getOrdenar();
                 seleccion = (CheckBox) findViewById(R.id.checkBox);
                 if (seleccion.isChecked()) {
                     cant = (EditText) findViewById(R.id.txtpagar);
@@ -80,7 +80,8 @@ public class Adaptador extends Activity {
     }
 
 
+    public void callOrdenar(Lista_entrada l,View view) {
 
 
-
+    }
 }
