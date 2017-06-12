@@ -14,7 +14,7 @@ public class Italiano extends AppCompatActivity {
     }
 
     public void callilromano(View view) {
-        Menu.restauranteActual="Sushi";
+        Menu.restauranteActual="Il Romano";
         if(Adaptador.datos.size()>0)
             Adaptador.clearList();
         Adaptador.addList(new Comida("Arroz","",90,R.drawable.comida2));
@@ -26,7 +26,7 @@ public class Italiano extends AppCompatActivity {
     }
 
     public void callhasta(View view) {
-        Menu.restauranteActual="Sushi";
+        Menu.restauranteActual="Hasta la Pasta";
         if(Adaptador.datos.size()>0)
             Adaptador.clearList();
         Adaptador.addList(new Comida("Arroz","",90,R.drawable.comida2));

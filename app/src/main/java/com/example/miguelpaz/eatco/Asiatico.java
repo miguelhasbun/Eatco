@@ -35,8 +35,8 @@ public class Asiatico extends AppCompatActivity {
         Menu.restauranteActual="Sushi";
         if(Adaptador.datos.size()>0)
             Adaptador.clearList();
-        Adaptador.addList(new Comida("Arroz","",90,R.drawable.comida2));
-        Adaptador.addList(new Comida("Daddy Itto","Papas con carne y con refresco mediano",100,R.drawable.daddy));
+        Adaptador.addList(new Comida("Arroz","",90,R.drawable.arroz));
+        Adaptador.addList(new Comida("Daddy Itto","",100,R.drawable.daddy));
         Adaptador.addList(new Comida("Marimba Roll","",100,R.drawable.marimba));
         Adaptador.addList(new Comida("El Chelito","",100,R.drawable.elchelito));
         Intent i= new Intent(this, Adaptador.class);

@@ -10,15 +10,15 @@ public class Lista_entrada {
         private double precio,cant;
         private String textoEncima;
         private String textoDebajo;
-        boolean ordenar;
+       // boolean ordenar;
 
         public Lista_entrada(int idImagen, String textoEncima, String textoDebajo,double p) {
             this.idImagen = idImagen;
             this.textoEncima = textoEncima;
             this.textoDebajo = textoDebajo;
             this.precio=p;
-            ordenar=false;
-            cant=0;
+        //    ordenar=false;
+          //  cant=0;
         }
 
         public String get_textoEncima() {
@@ -37,11 +37,11 @@ public class Lista_entrada {
             return precio;
         }
 
-        public boolean getOrdenar(){return ordenar;}
+      /*  public boolean getOrdenar(){return ordenar;}
 
         public void setOrdenar(boolean o){this.ordenar=o;}
 
         public double getCant(){return cant;}
 
-        public void setCant(double c){this.cant=c;}
+        public void setCant(double c){this.cant=c;}*/
 }

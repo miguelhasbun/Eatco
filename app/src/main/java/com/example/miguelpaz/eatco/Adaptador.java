@@ -80,8 +80,5 @@ public class Adaptador extends Activity {
     }
 
 
-    public void callOrdenar(Lista_entrada l,View view) {
 
-
-    }
 }
