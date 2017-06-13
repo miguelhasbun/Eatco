@@ -1,6 +1,7 @@
 package com.example.miguelpaz.eatco;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -16,8 +17,10 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 
 public class Adaptador extends Activity {
-    private boolean variable=true;
+   /*
     public static double subtotal;
+    private double cantidad,precio;
+    public Lista_entrada elegido;*/
 
     public static ArrayList<Lista_entrada> datos = new ArrayList<>();
     @Override
@@ -35,7 +38,7 @@ public class Adaptador extends Activity {
         lista.setAdapter(new Lista_adaptador(this, R.layout.entrada, datos){
 
             @Override
-            public void onEntrada(Object entrada, View view) {
+            public void onEntrada(final Object entrada, View view) {
                 TextView texto_precio= (TextView) view.findViewById(R.id.txtPrecio);
                 texto_precio.setText(String.valueOf(((Lista_entrada) entrada).getPrecio()));
 
@@ -48,12 +51,30 @@ public class Adaptador extends Activity {
                 ImageView imagen_entrada = (ImageView) view.findViewById(R.id.imageView_imagen);
                 imagen_entrada.setImageResource(((Lista_entrada) entrada).get_idImagen());
 
+                CheckBox checkA = (CheckBox) view.findViewById(R.id.checkBox);
+                EditText textCant= (EditText) view.findViewById(R.id.txtpagar);
 
+
+                checkA.setOnClickListener( new View.OnClickListener() {
+
+                    public void onClick(View v) {
+
+                        CheckBox check = (CheckBox) v ;
+                        Toast toast = Toast.makeText(Adaptador.this, ((Lista_entrada) entrada).get_textoEncima()+ " - Pulsado Insectívoro:"+ check.isChecked(), Toast.LENGTH_LONG);
+                        toast.show();/*
+                        EditText editText=(EditText)v;
+                        cantidad = Double.valueOf(editText.getText().toString());
+                        precio= ((Lista_entrada)entrada).getPrecio();
+                        Toast toat = Toast.makeText(Adaptador.this, String.valueOf(cantidad), Toast.LENGTH_LONG);
+                        toast.show();*/
+                    }
+
+                });
             }
 
 
         });
-
+        /*
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public CheckBox seleccion;
             public EditText cant;
@@ -74,7 +95,7 @@ public class Adaptador extends Activity {
                     total.setText(String.valueOf(usuario.getLoggedUser().getTotal()));
                 }
             }
-        });
+        });*/
     }
 
     public static void addList(Comida c){
@@ -85,6 +106,11 @@ public class Adaptador extends Activity {
         datos.clear();
     }
 
+    public static int getTamList(){return datos.size();}
 
 
+    public void callfactura(View view) {
+        Intent i= new Intent(this, Factura.class);
+        startActivity(i);
+    }
 }

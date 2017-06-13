@@ -68,6 +68,7 @@ public class RegistrarseActivity extends AppCompatActivity {
                 Intent inte = new Intent(this, MainActivity.class);
                 startActivity(inte);
                 //System.out.println("LOGGED USER: " + usuario.getLoggedUser());
+                Toast.makeText(this, " Icio sesion correctamente", Toast.LENGTH_LONG).show();
             } else {
                 Toast.makeText(this, " Usuario y/o contraseña incorrectos.", Toast.LENGTH_LONG).show();
             }

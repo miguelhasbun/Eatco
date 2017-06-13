@@ -15,4 +15,5 @@
         completions."
     </string>
     <string name="title_activity_registrarse">"Registrarse "</string>
+    <string name="title_activity_factura">Factura</string>
 </resources>

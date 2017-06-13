@@ -21,7 +21,7 @@
         <activity android:name=".Mexicano" />
         <activity android:name=".Asiatico" />
         <activity android:name=".Italiano" />
-        <activity android:name=".RegistrarseActivity"></activity>
+        <activity android:name=".RegistrarseActivity" />
         <activity android:name=".Configuracion" />
         <activity android:name=".Adaptador" />
         <activity android:name=".Inicio">
@@ -31,7 +31,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Contactanos"></activity>
+        <activity android:name=".Contactanos" />
+        <activity android:name=".Factura"></activity>
     </application>
 
 </manifest>

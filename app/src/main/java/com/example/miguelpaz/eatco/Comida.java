@@ -7,14 +7,12 @@ public class Comida {
     private String title,content;
     private double price;
     private int picture;
-   // private TipoDeComida tipo;
 
     public Comida(String title, String content, double price, int picture) {
         this.title = title;
         this.content = content;
         this.price = price;
         this.picture = picture;
-       //this.tipo = tipo;
     }
 
     public String getTitle() {
@@ -49,13 +47,5 @@ public class Comida {
         this.picture = picture;
     }
 
-    /*public TipoDeComida getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(TipoDeComida tipo) {
-        this.tipo = tipo;
-    }
-    */
 }
 

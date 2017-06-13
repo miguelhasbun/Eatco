@@ -41,9 +41,9 @@ public class Mexicano extends AppCompatActivity {
         Menu.restauranteActual="Taco Inn";
         if(Adaptador.datos.size()>0)
             Adaptador.clearList();
-        Adaptador.addList(new Comida("Parrillada especial","cuatro tacos de pastor, cuatro de bistec, cuatro de pollo.\n Acompañado por dos refrescos de tu elección",349,R.drawable.antojitos1));
-        Adaptador.addList(new Comida("Parrillada Inn","5 tacos de tu eleccion y combinacion con 3 refrescos.",479,R.drawable.antojitos2));
-        Adaptador.addList(new Comida("Pasta penne","deliciosa pasta blanca acompañada de camarones al ajillo.",253,R.drawable.antojitos4));
+        Adaptador.addList(new Comida("Parrillada especial","cuatro tacos de pastor, cuatro de bistec, cuatro de pollo.\n Acompañado por dos refrescos de tu elección",349,R.drawable.parrillada3));
+        Adaptador.addList(new Comida("Parrillada Inn","5 tacos de tu eleccion y combinacion con 3 refrescos.",479,R.drawable.parrillada1));
+        Adaptador.addList(new Comida("Parrillada mariachi","4 tacos de pastor, 2 de bistec, 2 tacos flauta, 2 gringas y guacamole. Acompañado de tres refrescos.",439.00,R.drawable.parrillada));
 
         Intent i= new Intent(this, Adaptador.class);
         startActivity(i);
