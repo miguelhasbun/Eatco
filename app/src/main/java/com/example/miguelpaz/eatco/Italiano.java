@@ -19,10 +19,9 @@ public class Italiano extends AppCompatActivity {
         Menu.restauranteActual="Il Romano";
         if(Adaptador.datos.size()>0)
             Adaptador.clearList();
-        Adaptador.addList(new Comida("Arroz","",90,R.drawable.comida2));
-        Adaptador.addList(new Comida("Daddy Itto","Papas con carne y con refresco mediano",100,R.drawable.daddy));
-        Adaptador.addList(new Comida("Marimba Roll","",100,R.drawable.marimba));
-        Adaptador.addList(new Comida("El Chelito","",100,R.drawable.elchelito));
+        Adaptador.addList(new Comida("Pizza 4 carnes","deliciosa pizza ocho piezas de pasta delgada o gruesa segun tu elección con queso mozarella, jamon, peperoni, tocino y carne y nuestra salsa roja de la casa.",398.00,R.drawable.romano1));
+        Adaptador.addList(new Comida("Pizza Frutti di Mare","nuestra original pasta de la casa con salsa roja, vegetales y camarones.",432.00,R.drawable.romano2));
+        Adaptador.addList(new Comida("Pizza 4 estaciones","La mas pedida, deliciosa combinacion de pizza de jamón peperoni, suprema y de carne dividida en cuatro partes con queso mozarella.",390,R.drawable.romano3));
         Intent i= new Intent(this, Adaptador.class);
         startActivity(i);
     }
@@ -31,10 +30,9 @@ public class Italiano extends AppCompatActivity {
         Menu.restauranteActual="Hasta la Pasta";
         if(Adaptador.datos.size()>0)
             Adaptador.clearList();
-        Adaptador.addList(new Comida("Arroz","",90,R.drawable.comida2));
-        Adaptador.addList(new Comida("Daddy Itto","Papas con carne y con refresco mediano",100,R.drawable.daddy));
-        Adaptador.addList(new Comida("Marimba Roll","",100,R.drawable.marimba));
-        Adaptador.addList(new Comida("El Chelito","",100,R.drawable.elchelito));
+        Adaptador.addList(new Comida("Pasta alfredo","deliciosa pasta linguini con la tradicional salsa blanca alfredo.",210,R.drawable.hasta1));
+        Adaptador.addList(new Comida("Ravioli","sabrosos ravioli rellenos de carne premium y salsa roja de la casa.",245,R.drawable.hasta2));
+        Adaptador.addList(new Comida("Pasta penne","deliciosa pasta blanca acompañada de camarones al ajillo.",253,R.drawable.hasta3));
         Intent i= new Intent(this, Adaptador.class);
         startActivity(i);
     }
