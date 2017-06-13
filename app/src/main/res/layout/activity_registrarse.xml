@@ -15,54 +15,64 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/logo" />
+
         <EditText
             android:id="@+id/txtNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="67dp"
             android:ems="10"
             android:hint="Usuario"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
 
         <EditText
             android:id="@+id/txtPass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignLeft="@+id/txtNombre"
-            android:layout_alignStart="@+id/txtNombre"
-            android:layout_below="@+id/txtNombre"
-            android:layout_marginTop="69dp"
+            android:layout_marginTop="18dp"
             android:ems="10"
             android:hint="Contraseña"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:layout_below="@+id/txtNombre"
+            android:layout_alignLeft="@+id/txtNombre"
+            android:layout_alignStart="@+id/txtNombre" />
 
         <Button
             android:id="@+id/btnIniciar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
             android:text="Iniciar Sesion"
             android:onClick="calliniciar"
-            android:layout_marginLeft="37dp"
-            android:layout_marginStart="37dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginTop="21dp"
             android:layout_below="@+id/txtPass"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_toLeftOf="@+id/btnRegistrar"
+            android:layout_toStartOf="@+id/btnRegistrar" />
 
         <Button
             android:id="@+id/btnRegistrar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Registrarse"
-            android:onClick="callregistrarse"
             android:layout_alignBaseline="@+id/btnIniciar"
             android:layout_alignBottom="@+id/btnIniciar"
-            android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginRight="45dp"
-            android:layout_marginEnd="45dp" />
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="55dp"
+            android:layout_marginRight="55dp"
+            android:onClick="callregistrarse"
+            android:text="Registrarse" />
 
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
