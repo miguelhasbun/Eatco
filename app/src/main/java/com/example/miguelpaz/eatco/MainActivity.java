@@ -27,4 +27,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i= new Intent(this, Configuracion.class);
         startActivity(i);
     }
+
+    public void callnosotros(View view){
+        Intent i= new Intent(this, Nosotros.class);
+        startActivity(i);
+    }
 }

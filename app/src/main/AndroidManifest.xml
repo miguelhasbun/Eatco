@@ -32,7 +32,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Contactanos" />
-        <activity android:name=".Factura"></activity>
+        <activity android:name=".Factura" />
+        <activity android:name=".Nosotros"></activity>
     </application>
 
 </manifest>
