@@ -79,6 +79,7 @@
             android:layout_alignRight="@+id/button9"
             android:layout_alignStart="@+id/button9"
             android:layout_below="@+id/button9"
+            android:onClick="callpromociones"
             android:text="Promociones" />
 
         <Button

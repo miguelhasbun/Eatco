@@ -27,7 +27,7 @@ public class Factura extends AppCompatActivity {
     public void callpago(View view) {
         if(Configuracion.dir.equals("")) {
             Toast.makeText(this, "Debe cambiar la direccion", Toast.LENGTH_LONG).show();
-            Intent i= new Intent(this, Configuracion.class);
+            Intent i = new Intent(this, Configuracion.class);
             startActivity(i);
         }
         else{
@@ -37,5 +37,11 @@ public class Factura extends AppCompatActivity {
 
     }
 
-
+    public void callcambiar(View view) {
+        Intent i= new Intent(this, Configuracion.class);
+        startActivity(i);
+        Spinner spinner2 = (Spinner) findViewById(R.id.spinner2);
+        String[] letras = {Configuracion.dir};
+        spinner2.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, letras));
+    }
 }

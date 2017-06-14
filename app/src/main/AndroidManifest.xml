@@ -31,10 +31,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Contactanos" />
         <activity android:name=".Factura" />
         <activity android:name=".Nosotros" />
-        <activity android:name=".Llamadas"></activity>
+        <activity android:name=".Llamadas" />
     </application>
 
 </manifest>

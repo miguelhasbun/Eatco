@@ -37,4 +37,14 @@ public class MainActivity extends AppCompatActivity {
         Intent i= new Intent(this, Llamadas.class);
         startActivity(i);
     }
+
+    public void callpromociones(View view) {
+        if(Adaptador.getTamList()>0)
+            Adaptador.clearList();
+        Adaptador.addList(new Comida("Tacotento","Paquete atores (8 personas)",598,R.drawable.tacotento2));
+        Adaptador.addList(new Comida("Antojitos Mexicanos","Nachos",50,R.drawable.antojitos2));
+        Adaptador.addList(new Comida("Costas Burger","Costas Pizza ",200,R.drawable.pizza2));
+        Intent i= new Intent(this, Adaptador.class);
+        startActivity(i);
+    }
 }

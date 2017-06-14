@@ -105,7 +105,8 @@
                         android:id="@+id/button31"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Confirmar direccion" />
+                        android:onClick="callcambiar"
+                        android:text="Cambiar direccion" />
 
                     <Space
                         android:layout_width="match_parent"
@@ -163,14 +164,24 @@
                         android:layout_height="28dp"
                         android:layout_weight="0.01"
                         android:text="     5" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.48" />
+
+                    <TextView
+                        android:id="@+id/textView28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Direccion" />
                 </LinearLayout>
 
             </RelativeLayout>
 
             <RelativeLayout
-                android:layout_width="51dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_weight="0.41"
                 tools:layout_editor_absoluteX="274dp"
                 tools:layout_editor_absoluteY="58dp">
 
