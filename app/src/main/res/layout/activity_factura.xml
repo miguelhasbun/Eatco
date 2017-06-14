@@ -87,7 +87,7 @@
                     <Space
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.47" />
+                        android:layout_weight="0.37" />
 
                     <TextView
                         android:id="@+id/textView20"
@@ -100,6 +100,17 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.18" />
+
+                    <Button
+                        android:id="@+id/button31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Confirmar direccion" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.10" />
 
                     <TextView
                         android:id="@+id/textView24"
@@ -207,7 +218,7 @@
                     <Space
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.36" />
+                        android:layout_weight="0.12" />
 
                     <TextView
                         android:id="@+id/textView21"
@@ -215,6 +226,16 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="0.07"
                         android:text="350" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.17" />
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
                 </LinearLayout>
 
             </RelativeLayout>

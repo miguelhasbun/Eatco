@@ -14,7 +14,7 @@ public class Inicio extends AppCompatActivity {
     }
 
     public void callempresa(View view) {
-        Intent i= new Intent(this, Contactanos.class);
+        Intent i= new Intent(this, Llamadas.class);
         startActivity(i);
     }
 
