@@ -60,7 +60,7 @@ public class Adaptador extends Activity {
                     public void onClick(View v) {
 
                         CheckBox check = (CheckBox) v ;
-                        Toast toast = Toast.makeText(Adaptador.this, ((Lista_entrada) entrada).get_textoEncima()+ " - Pulsado", Toast.LENGTH_LONG);
+                        Toast toast = Toast.makeText(Adaptador.this, ((Lista_entrada) entrada).get_textoEncima()+ " - Pulsado"+check.isChecked(), Toast.LENGTH_LONG);
                         toast.show();/*
                         EditText editText=(EditText)v;
                         cantidad = Double.valueOf(editText.getText().toString());

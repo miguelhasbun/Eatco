@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void callpromociones(View view) {
+        Menu.restauranteActual="Promociones";
         if(Adaptador.getTamList()>0)
             Adaptador.clearList();
         Adaptador.addList(new Comida("Tacotento","Paquete atores (8 personas)",598,R.drawable.tacotento2));

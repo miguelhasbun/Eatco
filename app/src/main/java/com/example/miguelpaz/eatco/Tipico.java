@@ -32,7 +32,7 @@ public class Tipico extends AppCompatActivity {
         Adaptador.addList(new Comida("Costas Pizza","",200,R.drawable.costas2));
         Adaptador.addList(new Comida("Hot Dog Costas","",75,R.drawable.costas3));
         Adaptador.addList(new Comida("Costas Burger","",95,R.drawable.costas4));
-        Adaptador.addList(new Comida("Chilli con Papas","",65,R.drawable.costas4));
+        //Adaptador.addList(new Comida("Chilli con Papas","",65,R.drawable.costas4));
         Intent i= new Intent(this, Adaptador.class);
         startActivity(i);
     }
