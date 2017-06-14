@@ -1,19 +1,9 @@
 package com.example.miguelpaz.eatco;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-
 import java.io.Serializable;
 import java.util.ArrayList;
-import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 /**
  * Created by David on 6/6/2017.
@@ -131,4 +121,10 @@ public class usuario implements Serializable {
 
     }
 
+    /**
+     * Created by Miguel Paz on 13/6/2017.
+     */
+
+    public static class Llamada {
+    }
 }

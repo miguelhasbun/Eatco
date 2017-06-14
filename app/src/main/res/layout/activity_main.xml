@@ -67,6 +67,7 @@
             android:layout_alignRight="@+id/button8"
             android:layout_alignStart="@+id/button8"
             android:layout_below="@+id/button8"
+            android:onClick="callllamadas"
             android:text="Contáctanos" />
 
         <Button

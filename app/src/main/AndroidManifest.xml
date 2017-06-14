@@ -33,7 +33,8 @@
         </activity>
         <activity android:name=".Contactanos" />
         <activity android:name=".Factura" />
-        <activity android:name=".Nosotros"></activity>
+        <activity android:name=".Nosotros" />
+        <activity android:name=".Llamadas"></activity>
     </application>
 
 </manifest>

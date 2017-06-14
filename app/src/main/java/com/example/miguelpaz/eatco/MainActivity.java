@@ -32,4 +32,9 @@ public class MainActivity extends AppCompatActivity {
         Intent i= new Intent(this, Nosotros.class);
         startActivity(i);
     }
+
+    public void callllamadas(View view){
+        Intent i= new Intent(this, Llamadas.class);
+        startActivity(i);
+    }
 }
